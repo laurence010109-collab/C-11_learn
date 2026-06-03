@@ -1,5 +1,5 @@
 
-
+//C++初始化98 初始化方法:
 #include<iostream>
 class test
 {
