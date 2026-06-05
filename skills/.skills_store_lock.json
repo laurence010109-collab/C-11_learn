@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "skills": {
+    "academic-writing": {
+      "name": "academic-writing",
+      "zip_url": "https://api.skillhub.cn/api/v1/download?slug=academic-writing",
+      "source": "community",
+      "version": "1.0.0",
+      "installedAt": "2026-06-05T09:48:43Z"
+    }
+  }
+}
