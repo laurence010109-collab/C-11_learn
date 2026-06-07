@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "mkdir -p .learnings && [ -f \".learnings/LEARNINGS.md\" ] || printf \"# Learnings\\n\\nCorrections, insights, and knowledge gaps captured during development.\\n\\n**Categories**: correction | insight | knowledge_gap | best_practice\\n\\n---\\n\" > .learnings/LEARNINGS.md && [ -f \".learnings/ERRORS.md\" ] || printf \"# Errors\\n\\nCommand failures and integration errors.\\n\\n---\\n\" > .learnings/ERRORS.md && [ -f \".learnings/FEATURE_REQUESTS.md\" ] || printf \"# Feature Requests\\n\\nCapabilities requested by the user.\\n\\n---\\n\" > .learnings/FEATURE_REQUESTS.md"
+          },
+          {
+            "type": "command",
+            "command": "bash /home/laurence/.claude/skills/self-improving-agent/scripts/activator.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
